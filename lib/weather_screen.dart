@@ -21,6 +21,7 @@ class weather_screen extends StatefulWidget {
 
 class _weather_screenState extends State<weather_screen> {
   Future<Map<String, dynamic>> getCurrentWeather() async {
+    var time =AboutDialog();
     try {
       String cityName = "Potsdam";
       String countryName = "germany";
