@@ -1,0 +1,4 @@
+#Tue May 07 11:38:01 CEST 2024
+base.0=C\:\\Predator Helios 300\\VS_Flutter\\weatherapp\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
