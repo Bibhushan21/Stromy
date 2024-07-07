@@ -1,0 +1,1 @@
+ C:\\weatherapp\\.dart_tool\\flutter_build\\735dc556c9dc2d45b447dfc06eac24ef\\native_assets.yaml: 

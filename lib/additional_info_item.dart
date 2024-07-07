@@ -26,9 +26,45 @@ class additional_info_item extends StatelessWidget {
         ),
         Text(
           text,
-          style: const TextStyle(fontWeight: FontWeight.bold),
+          style: const TextStyle(fontFamily: 'LXGWWenKai', color: Colors.white),
         ),
-        Text(value),
+        Text(
+          value,
+          style: const TextStyle(fontFamily: 'LXGWWenKai', color: Colors.white),
+        ),
+      ],
+    );
+  }
+}
+
+class additional_info extends StatelessWidget {
+  late String image;
+  late String text;
+  late String value;
+
+  additional_info({
+    super.key,
+    required this.image,
+    required this.text,
+    required this.value,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Image.asset(
+          image,
+          scale: 7,
+        ),
+        Text(
+          text,
+          style: const TextStyle(fontFamily: 'LXGWWenKai', color: Colors.white),
+        ),
+        Text(
+          value,
+          style: const TextStyle(fontFamily: 'LXGWWenKai', color: Colors.white),
+        ),
       ],
     );
   }

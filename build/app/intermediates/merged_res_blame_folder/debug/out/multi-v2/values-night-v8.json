@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.weatherapp-mergeDebugResources-5:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.weatherapp-mergeDebugResources-14:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Predator Helios 300\\VS_Flutter\\weatherapp\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\weatherapp\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

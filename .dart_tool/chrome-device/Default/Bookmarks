@@ -1,0 +1,69 @@
+{
+   "checksum": "debacb59dd54abaa9e50b3fbd05a78a0",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13355238021108904",
+               "date_last_used": "0",
+               "guid": "bff61976-e809-4255-b492-16409b7d4d21",
+               "id": "8",
+               "name": "Alienware",
+               "show_icon": false,
+               "source": "import_fre",
+               "type": "url",
+               "url": "http://www.alienwarearena.com/welcome-us"
+            }, {
+               "date_added": "13355238021108904",
+               "date_last_used": "0",
+               "guid": "cb3f9121-b349-4986-a56c-15b3bdc77e2e",
+               "id": "10",
+               "name": "Alienware Support",
+               "show_icon": false,
+               "source": "import_fre",
+               "type": "url",
+               "url": "http://www.dell.com/support/home"
+            } ],
+            "date_added": "13361201094919015",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "a7db1fa6-2816-4847-b714-5c24db0d2bed",
+            "id": "7",
+            "name": "Alienware",
+            "source": "import_fre",
+            "type": "folder"
+         } ],
+         "date_added": "13361201091996722",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13361201091996760",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13361201091996762",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

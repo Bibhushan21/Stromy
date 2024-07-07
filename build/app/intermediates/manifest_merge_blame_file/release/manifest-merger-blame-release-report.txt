@@ -1,0 +1,206 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.weatherapp"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\weatherapp\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->C:\weatherapp\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:2:5-66
+11-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:2:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:3:5-79
+12-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:3:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:4:5-81
+13-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:4:22-78
+14    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+14-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:5:5-85
+14-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:5:22-82
+15    <!--
+16         Required to query activities that can process text, see:
+17         https://developer.android.com/training/package-visibility?hl=en and
+18         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+19
+20         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+21    -->
+22    <queries>
+22-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:44:5-49:15
+23        <intent>
+23-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:45:9-48:18
+24            <action android:name="android.intent.action.PROCESS_TEXT" />
+24-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:46:13-72
+24-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:46:21-70
+25
+26            <data android:mimeType="text/plain" />
+26-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:47:13-50
+26-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:47:19-48
+27        </intent>
+28    </queries>
+29
+30    <permission
+30-->[androidx.core:core:1.12.0] C:\Users\subed\.gradle\caches\transforms-3\c62c4c0b77e9ad954eadae8f32e7e2cd\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+31        android:name="com.example.weatherapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+31-->[androidx.core:core:1.12.0] C:\Users\subed\.gradle\caches\transforms-3\c62c4c0b77e9ad954eadae8f32e7e2cd\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+32        android:protectionLevel="signature" />
+32-->[androidx.core:core:1.12.0] C:\Users\subed\.gradle\caches\transforms-3\c62c4c0b77e9ad954eadae8f32e7e2cd\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+33
+34    <uses-permission android:name="com.example.weatherapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+34-->[androidx.core:core:1.12.0] C:\Users\subed\.gradle\caches\transforms-3\c62c4c0b77e9ad954eadae8f32e7e2cd\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+34-->[androidx.core:core:1.12.0] C:\Users\subed\.gradle\caches\transforms-3\c62c4c0b77e9ad954eadae8f32e7e2cd\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+35
+36    <application
+37        android:name="android.app.Application"
+37-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:9:9-42
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.12.0] C:\Users\subed\.gradle\caches\transforms-3\c62c4c0b77e9ad954eadae8f32e7e2cd\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+39        android:icon="@mipmap/ic_launcher"
+39-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:10:9-43
+40        android:label="weatherapp" >
+40-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:8:9-35
+41        <activity
+41-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:11:9-31:20
+42            android:name="com.example.weatherapp.MainActivity"
+42-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:12:13-41
+43            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+43-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:16:13-163
+44            android:exported="true"
+44-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:13:13-36
+45            android:hardwareAccelerated="true"
+45-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:17:13-47
+46            android:launchMode="singleTop"
+46-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:14:13-43
+47            android:theme="@style/LaunchTheme"
+47-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:15:13-47
+48            android:windowSoftInputMode="adjustResize" >
+48-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:18:13-55
+49
+50            <!--
+51                 Specifies an Android theme to apply to this Activity as soon as
+52                 the Android process has started. This theme is visible to the user
+53                 while the Flutter UI initializes. After that, this theme continues
+54                 to determine the Window background behind the Flutter UI.
+55            -->
+56            <meta-data
+56-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:23:13-26:17
+57                android:name="io.flutter.embedding.android.NormalTheme"
+57-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:24:15-70
+58                android:resource="@style/NormalTheme" />
+58-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:25:15-52
+59
+60            <intent-filter>
+60-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:27:13-30:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:28:17-68
+61-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:28:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:29:17-76
+63-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:29:27-74
+64            </intent-filter>
+65        </activity>
+66        <!--
+67             Don't delete the meta-data below.
+68             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+69        -->
+70        <meta-data
+70-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:34:9-36:33
+71            android:name="flutterEmbedding"
+71-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:35:13-44
+72            android:value="2" />
+72-->C:\weatherapp\android\app\src\main\AndroidManifest.xml:36:13-30
+73
+74        <service
+74-->[:geolocator_android] C:\weatherapp\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:56
+75            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+75-->[:geolocator_android] C:\weatherapp\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-77
+76            android:enabled="true"
+76-->[:geolocator_android] C:\weatherapp\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-35
+77            android:exported="false"
+77-->[:geolocator_android] C:\weatherapp\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+78            android:foregroundServiceType="location" />
+78-->[:geolocator_android] C:\weatherapp\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-53
+79        <!--
+80           Declares a provider which allows us to store files to share in
+81           '.../caches/share_plus' and grant the receiving action access
+82        -->
+83        <provider
+83-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-23:20
+84            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+84-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-77
+85            android:authorities="com.example.weatherapp.flutter.share_provider"
+85-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-74
+86            android:exported="false"
+86-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+87            android:grantUriPermissions="true" >
+87-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-47
+88            <meta-data
+88-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-22:68
+89                android:name="android.support.FILE_PROVIDER_PATHS"
+89-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:21:17-67
+90                android:resource="@xml/flutter_share_file_paths" />
+90-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:22:17-65
+91        </provider>
+92        <!--
+93           This manifest declared broadcast receiver allows us to use an explicit
+94           Intent when creating a PendingItent to be informed of the user's choice
+95        -->
+96        <receiver
+96-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-34:20
+97            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+97-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-82
+98            android:exported="false" >
+98-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-37
+99            <intent-filter>
+99-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-33:29
+100                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+100-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:32:17-65
+100-->[:share_plus] C:\weatherapp\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:32:25-62
+101            </intent-filter>
+102        </receiver>
+103
+104        <activity
+104-->[:url_launcher_android] C:\weatherapp\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+105            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+105-->[:url_launcher_android] C:\weatherapp\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+106            android:exported="false"
+106-->[:url_launcher_android] C:\weatherapp\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+107            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+107-->[:url_launcher_android] C:\weatherapp\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+108
+109        <uses-library
+109-->[androidx.window:window:1.0.0-beta04] C:\Users\subed\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+110            android:name="androidx.window.extensions"
+110-->[androidx.window:window:1.0.0-beta04] C:\Users\subed\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+111            android:required="false" />
+111-->[androidx.window:window:1.0.0-beta04] C:\Users\subed\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+112        <uses-library
+112-->[androidx.window:window:1.0.0-beta04] C:\Users\subed\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+113            android:name="androidx.window.sidecar"
+113-->[androidx.window:window:1.0.0-beta04] C:\Users\subed\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+114            android:required="false" />
+114-->[androidx.window:window:1.0.0-beta04] C:\Users\subed\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+115
+116        <activity
+116-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\subed\.gradle\caches\transforms-3\13457127ac1dcbe7214c71fa558f57ff\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+117            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+117-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\subed\.gradle\caches\transforms-3\13457127ac1dcbe7214c71fa558f57ff\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+118            android:exported="false"
+118-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\subed\.gradle\caches\transforms-3\13457127ac1dcbe7214c71fa558f57ff\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+119            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+119-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\subed\.gradle\caches\transforms-3\13457127ac1dcbe7214c71fa558f57ff\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+120
+121        <meta-data
+121-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\subed\.gradle\caches\transforms-3\ea216ae7c42c1ba0d0d2afdbec95d33b\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+122            android:name="com.google.android.gms.version"
+122-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\subed\.gradle\caches\transforms-3\ea216ae7c42c1ba0d0d2afdbec95d33b\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+123            android:value="@integer/google_play_services_version" />
+123-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\subed\.gradle\caches\transforms-3\ea216ae7c42c1ba0d0d2afdbec95d33b\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+124    </application>
+125
+126</manifest>
